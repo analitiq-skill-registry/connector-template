@@ -7,9 +7,9 @@ Thank you for your interest in contributing to the Analitiq connector registry. 
 - Install [Claude Code](https://claude.ai/code)
 - Install the connector builder plugin:
   ```
-  claude plugin add analitiq-skill-registry/analitiq-plugin-connector-builder
+  claude plugin add analitiq-dip-registry/analitiq-plugin-connector-builder
   ```
-- Fork the connector repo you want to contribute to (or the [connector-template](https://github.com/analitiq-skill-registry/connector-template) for new connectors)
+- Fork the connector repo you want to contribute to (or the [connector-template](https://github.com/analitiq-dip-registry/connector-template) for new connectors)
 
 ## Adding endpoints to an existing connector
 
@@ -29,14 +29,14 @@ For breaking changes to authentication or connector structure, use the label `ve
 
 ## Creating a new connector
 
-Before creating a new connector, check if one already exists at [github.com/analitiq-skill-registry](https://github.com/analitiq-skill-registry). Connectors are named `connector-{system-name}`.
+Before creating a new connector, check if one already exists at [github.com/analitiq-dip-registry](https://github.com/analitiq-dip-registry). Connectors are named `connector-{system-name}`.
 
 If the connector doesn't exist:
 
 1. Launch Claude anywhere
 2. Tell it: *"I want to create a connector for [system name]"*
 3. The plugin will interview you about the system, research its API documentation, and generate the full connector with all required files
-4. Push the new repo to the `analitiq-skill-registry` GitHub org (or request access to do so)
+4. Push the new repo to the `analitiq-dip-registry` GitHub org (or request access to do so)
 
 No coding required — the plugin handles authentication research, endpoint schema generation, and file creation automatically.
 
@@ -76,6 +76,10 @@ connector-{name}/
         └── {name}.json
 ```
 
+## Feature requests and bug reports
+
+If you have an idea for a new connector, want to request an endpoint, or found a bug, please [open a GitHub issue](https://github.com/analitiq-dip-registry/connector-template/issues) on the relevant connector repo. Use the issue to describe what you need and any context that would help.
+
 ## Questions?
 
-If you're unsure about anything, open an issue on the connector repo or on the [connector builder plugin](https://github.com/analitiq-skill-registry/analitiq-plugin-connector-builder) repo.
+If you're unsure about anything, open an issue on the connector repo or on the [connector builder plugin](https://github.com/analitiq-dip-registry/analitiq-plugin-connector-builder) repo.
